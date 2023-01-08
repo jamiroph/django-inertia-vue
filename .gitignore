@@ -31,3 +31,6 @@ wheels/
 *.manifest 
 *.spec 
 npm.log
+
+# IDE/Developer Environment
+.vscode
