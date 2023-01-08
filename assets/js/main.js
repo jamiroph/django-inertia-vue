@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         resolve: async name => {
             const page = (await pages[`./pages/${name}.vue`]()).default;
             page.layout = page.layout || Layout;
-            console.log(page);
             return page;
         },
         setup({ el, App, props, plugin }) {

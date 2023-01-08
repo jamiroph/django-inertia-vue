@@ -13,3 +13,11 @@ body {
 h1 {
   text-align: center;
 }
+
+.container {
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: space-evenly;
+}
