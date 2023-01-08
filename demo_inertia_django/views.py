@@ -2,8 +2,8 @@ from inertia import render
 
 
 def home(request):
-    return render(request, 'Events/Index', props={
-        'events': ['An event', 'another event', 'Yet another event']
+    return render(request, 'Polls/Index', props={
+        'polls': ['An event', 'another event', 'Yet another event']
     })
 
 
