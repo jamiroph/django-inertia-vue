@@ -8,4 +8,4 @@ def home(request):
     })
 
 def contact(request):
-    return render(request, 'Contact')
+    return render(request, 'Contact', { 'supportEmail': "jamiroph@googlemail.com"})
