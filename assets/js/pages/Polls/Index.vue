@@ -12,6 +12,11 @@ const props = defineProps({
             <img v-if="poll.img"/>
             <h3 v-if="poll.title">{{ poll.title }}</h3>
             <p> {{ poll.question_text }}</p>
+            <ul>
+                <li v-for="(choice, index) in poll.choice_set.all()" :key="index">
+                    {{ choice.choice_text }}
+                </li>
+            </ul>
         </article>
     </div>
 </template>

@@ -9,17 +9,12 @@ import { Link } from '@inertiajs/inertia-vue3';
             <li><Link :href="$route('contact')">Contact</Link></li>
         </ul>
     </nav>
-    <div class="containa">
+    <main>
         <slot />
-    </div>
+    </main>
 </template>
 
 
 <style scoped>
-.containa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+
 </style>
