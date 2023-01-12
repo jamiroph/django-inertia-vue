@@ -5,7 +5,7 @@ import MainNav from "./MainNav";
 
 <template>
 	<MainNav />
-	<main class="container max-w-5xl 4xl:px-4 mx-auto pt-20">
+	<main class="mt-20">
 		<slot />
 	</main>
 </template>
