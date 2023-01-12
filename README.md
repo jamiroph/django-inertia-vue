@@ -7,7 +7,8 @@ https://github.com/mercuryseries/django-inertia-vue
 Based on the Inertia.js + Django Setup tutorial by Honoré Hounwanou.
 
 TODO:
- - Include choices in Poll objects returned as props to Polls index
- - Implement for each over choices including choice text and vote count
- - Follow tutorial further and implement poll create and choice create functionality on frontend
- - Improve CSS/Add Tailwind?
+
+-   Include choices in Poll objects returned as props to Polls index
+-   Implement for each over choices including choice text and vote count
+-   Follow tutorial further and implement poll create and choice create functionality on frontend
+-   Improve CSS/Add Tailwind?

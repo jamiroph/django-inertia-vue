@@ -8,15 +8,17 @@ const props = defineProps({
 <template>
     <h2 class="m-auto">This is the polls page</h2>
     <div class="container lg-8 m-auto">
-        <article v-for="(poll, index) in polls" :key="index">
-            <img v-if="poll.img"/>
-            <h3 v-if="poll.title">{{ poll.title }}</h3>
-            <p> {{ poll.question_text }}</p>
-            <ul>
-                <li v-for="(choice, index) in poll.choice_set.all()" :key="index">
-                    {{ choice.choice_text }}
-                </li>
-            </ul>
-        </article>
+        <a v-for="(poll, index) in polls" :key="index"
+			href="#"
+			class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+		>
+			<h5 v-if="poll.title"
+				class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+			>{{ poll.title }}
+			</h5>
+			<p class="font-normal text-gray-700 dark:text-gray-400">
+				{{ poll.question_text }}
+			</p>
+		</a>
     </div>
 </template>

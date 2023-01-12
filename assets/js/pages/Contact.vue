@@ -1,11 +1,10 @@
 <script setup>
 const props = defineProps({
-    supportEmail: String,
+	supportEmail: String,
 });
 </script>
 
-
 <template>
-    <h1>Contact us</h1>
-    <p>{{ supportEmail }}</p>
+	<h1>Contact us</h1>
+	<p>{{ supportEmail }}</p>
 </template>
