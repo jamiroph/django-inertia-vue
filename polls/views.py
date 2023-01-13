@@ -11,6 +11,3 @@ def home(request):
     return render(request, 'Polls/Index', props={
         'polls': results
     })
-
-def contact(request):
-    return render(request, 'Contact', { 'supportEmail': "jamiroph@googlemail.com"})

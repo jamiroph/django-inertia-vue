@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
+    'blogspot.apps.BlogspotConfig',
     'django_vite',
     'inertia',
     'js_routes'
