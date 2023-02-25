@@ -145,5 +145,6 @@ INERTIA_LAYOUT = 'base.html'
 
 JS_ROUTES_INCLUSION_LIST = [
     'home',
-    'contact'
+    'contact',
+    'polls'
 ]
