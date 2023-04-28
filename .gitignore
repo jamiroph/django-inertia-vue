@@ -35,3 +35,4 @@ npm.log
 
 # IDE/Developer Environment
 .vscode
+.idea
