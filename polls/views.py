@@ -5,12 +5,8 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
     all_polls = Poll.objects.order_by('-pub_date')[:5]
-    results = []
-    for poll in all_polls:
-        poll.choices = poll.choice_set.get_queryset()
-        results.append(poll)
     return render(request, 'Polls/Index', props={
-        'polls': results
+        'polls': all_polls
     })
 
 def details(request, question_id):
